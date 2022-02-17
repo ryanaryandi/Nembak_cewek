@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<head>
+    <title> Hallo </title>
+
+    <script type="text/javascript">
+        flag = 1
+        function f1() {
+            textAlert = ("Makasih, Aku janji bakal bahagiain kamu :)")
+            document.getElementById('preview').innerText = textAlert;
+        }
+        function f() {
+            if (flag == 1) {
+                Bn.style.top = 475
+                Bn.style.left = 600
+                flag = 2
+            }
+            else if (flag == 2) {
+                Bn.style.top = 500
+                Bn.style.left = 100
+                flag = 3
+            }
+            else if (flag == 3) {
+                Bn.style.top = 500
+                Bn.style.left = 700
+                flag = 4
+            }
+            else if (flag == 4) {
+                Bn.style.top = 500
+                Bn.style.left = 200
+                flag = 5
+            }
+            else if (flag == 5) {
+                Bn.style.top = 400
+                Bn.style.left = 600
+                flag = 1
+            }
+        }
+    </script>
+
+</head>
+
+<div class="tengah">
+
+    <body>
+        <h1> Hai kamu &#10084 <h1>
+                <img alt="Love"
+                    src="https://firebasestorage.googleapis.com/v0/b/tebak-nama-buah-id.appspot.com/o/Gif%2Fcinta.gif?alt=media&token=3798f13a-f5ba-4592-9cb5-a0d51ba899f7"
+                    height="200" />
+                <h1 style="#">Kamu mau ga jadi pacar aku &#128522 ?</h1>
+                <div id="By" style="position:absolute;  top:400px; width:510px;
+height:210px;">
+                    <input type="button" style="font-size: 30px;" class="btn btn-primary btn-sm" value=" Iya aku mau "
+                        onClick="f1()" />
+                </div>
+                <div ID="Bn" style="position:absolute; left:580px; top:400px; width:310px; height:310px;">
+                    <input type="button" style="font-size: 30px;" class="btn btn-danger btn-sm"
+                        value="Kita temenan aja " onMouseOver="f()" />
+                </div>
+
+                <style>
+                    body {
+                        text-align: center;
+                        background-color: #FF69B4;
+                        margin-top: 50px;
+                    }
+
+                    h2 {
+                        padding-top: 210px;
+                        color: aliceblue;
+                    }
+
+                    .tengah {
+                        width: 870px;
+                        margin: 0 auto;
+                    }
+                </style>
+    </body>
+</div>
+<h2> <i id="preview"></i></h2>
+
+</html>
